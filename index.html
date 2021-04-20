@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html lang=”en”> 															<!--//english "en", deuschte Sprache wäre "de"-->
+<html lang=”en”> 															<!--english "en", deuschte Sprache wäre "de"-->
 <head>
-    <title>Meine erste Website</title>
-    <meta charset="utf-8">
+	<title>Kamerazugriff</title>
+    <meta charset="utf-8">													<!--gibt die buchstaben der Tastertur an-->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="HTML für einen Web Kamerazugriff">
+	<meta name="author" content="Jan Schneider">
+	
+	<!--viewport ist das Ansichsfenster des Benutzers und ist je nach Gerät anders, hier standart dimensionierung je nach Gerät-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+	
+	
     <!-- Name of your awesome camera app -->
     <title>Camera App</title>
+	
     <!-- Link to your main style sheet-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Camera -->
-    <main id="camera">
+    <main id="camera">							<!-- Hauptprogramm- id wird von Javeskript verwendet und muss eindeutig sein->
         <!-- Camera sensor -->
-        <canvas id="camera--sensor"></canvas>
+        <canvas id="camera--sensor"></canvas>		<!--dient nur als Container wird verwendet um Grafiken zu zeigen, in der Regel über JavaScript-->
         <!-- Camera view -->
-        <video id="camera--view" autoplay playsinline></video>
+        <video id="camera--view" autoplay playsinline></video> <!--bettet Video einheiten in ein Dokument ein, Clip oder Videostream-->
         <!-- Camera output -->
-        <img src="//:0" alt="" id="camera--output">
+        <img src="//:0" alt="" id="camera--output"> <!-- wird verwendet um ein Bild einzubetten, src Quelle und alt text für bildbeschriebung sind notwendig
         <!-- Camera trigger -->
         <button id="camera--trigger">Take a picture</button>
     </main>
