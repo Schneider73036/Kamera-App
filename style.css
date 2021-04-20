@@ -13,8 +13,9 @@ html, body{ /*schaut das das Projekt räumlich passt, keine Platzhalter und sowa
 }
 
 #camera--view, #camera--sensor, #camera--output{ /*wir wollen die Selfikamera benutzen*/
-    transform: scaleX(-2); /*trasformiert z.B. hier wird der Stream gespiegelt*/
-    filter: FlipH;
+    transform: scaleX(-1); /*trasformiert z.B. hier wird der Stream gespiegelt*/
+    /*filter: FlipH;*/
+    filter:blur(direction=30, strength=50)
 }
 
 #camera--trigger{  										/*zentrieren auf dem Boden und andere Einstellungen*/
