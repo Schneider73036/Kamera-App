@@ -10,6 +10,7 @@ html, body{ /*schaut das das Projekt räumlich passt, keine Platzhalter und sowa
     height: 100%;
     width: 100%:
     object-fit: cover;
+    filter:xray();
 }
 
 #camera--view, #camera--sensor, #camera--output{ /*wir wollen die Selfikamera benutzen*/
