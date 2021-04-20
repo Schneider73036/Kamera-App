@@ -13,8 +13,7 @@ html, body{ /*schaut das das Projekt räumlich passt, keine Platzhalter und sowa
 }
 
 #camera--view, #camera--sensor, #camera--output{ /*wir wollen die Selfikamera benutzen*/
-    /*transform: scaleX(-1); /*trasformiert z.B. hier wird der Stream gespiegelt*/
-    transform: scaleX(s 0 0 0 1 0 0 0 1);
+    transform: scaleX(-2); /*trasformiert z.B. hier wird der Stream gespiegelt*/
     filter: FlipH;
 }
 
